@@ -1,30 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ec.edu.espoch.trabajopareja2;
 
 import ec.edu.espoch.trabajopareja2.ennum.CarType;
 import ec.edu.espoch.trabajopareja2.ennum.Color;
 import ec.edu.espoch.trabajopareja2.ennum.FuelType;
 
-/**
- *
- * @author HP
- */
 public class Automobile {
 private String brand;
 private int model;
-private boolean engine; 
+private int engine; 
 private FuelType fuelType; 
 private CarType carType;
 private int numberDoors;
 private int seatingCapacity;
-private float maximumSpeed;
+private int maximumSpeed;
 private Color color;
-private float currentSpeed;
+private int currentSpeed;
 
-    public Automobile(String brand, int model, boolean engine, FuelType fuelType, CarType carType, int numberDoors, int seatingCapacity, float maximumSpeed, Color color, float currentSpeed) {
+    public Automobile(String brand, int model, int engine, FuelType fuelType, CarType carType, int numberDoors, int seatingCapacity, int maximumSpeed, Color color, int currentSpeed) {
         this.brand = brand;
         this.model = model;
         this.engine = engine;
@@ -37,6 +29,7 @@ private float currentSpeed;
         this.currentSpeed = currentSpeed;
     }
 
+    
 //Metodos Setter and Getter
 
     public String getBrand() {
@@ -55,11 +48,11 @@ private float currentSpeed;
         this.model = model;
     }
 
-    public boolean isEngine() {
+    public int getEngine() {
         return engine;
     }
 
-    public void setEngine(boolean engine) {
+    public void setEngine(int engine) {
         this.engine = engine;
     }
 
@@ -95,11 +88,11 @@ private float currentSpeed;
         this.seatingCapacity = seatingCapacity;
     }
 
-    public float getMaximumSpeed() {
+    public int getMaximumSpeed() {
         return maximumSpeed;
     }
 
-    public void setMaximumSpeed(float maximumSpeed) {
+    public void setMaximumSpeed(int maximumSpeed) {
         this.maximumSpeed = maximumSpeed;
     }
 
@@ -111,12 +104,13 @@ private float currentSpeed;
         this.color = color;
     }
 
-    public float getCurrentSpeed() {
+    public int getCurrentSpeed() {
         return currentSpeed;
     }
 
-    public void setCurrentSpeed(float currentSpeed) {
+    public void setCurrentSpeed(int currentSpeed) {
         this.currentSpeed = currentSpeed;
     }
+
     
 }
